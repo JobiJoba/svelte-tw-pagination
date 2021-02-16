@@ -13,7 +13,7 @@
   export let color = "indigo";
   $: s = small ? 8 : 12;
 
-  $: num_pages = Math.floor(num_items / per_page);
+  $: num_pages = Math.ceil(num_items / per_page);
 
   let arr_pages = [];
 
