@@ -43,7 +43,7 @@
   }
 
   $: if (num_items) {
-    num_pages = Math.round(num_items / per_page);
+    num_pages = Math.ceil(num_items / per_page);
     current = current || 1;
   }
 
